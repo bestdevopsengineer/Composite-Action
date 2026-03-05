@@ -1,0 +1,13 @@
+name: Call Python Test Action
+
+on: push
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Run Python Test Action
+        uses: bestdevopsengineer/composite-action/.github/actions/python-test-action@main
